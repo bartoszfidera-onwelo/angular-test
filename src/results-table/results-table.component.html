@@ -1,0 +1,19 @@
+<table>
+  <caption>
+    Todos table with
+    {{
+      (todos$ | async)?.length
+    }}
+    results
+  </caption>
+  <tr>
+    <th>Value</th>
+    <th>Completed</th>
+    <th>Computed Value</th>
+  </tr>
+  <tr *ngFor="let todo of todos$ | async">
+    <td>{{ todo.title }}</td>
+    <td>{{ todo.completed }}</td>
+    <td>{{ sumSquaresUpToN(todo.value) }}</td>
+  </tr>
+</table>

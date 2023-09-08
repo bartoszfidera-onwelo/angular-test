@@ -1,0 +1,13 @@
+.container {
+  height: 80px;
+  position: relative;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  height: 80px;
+  width: 80px;
+  transition: left;
+}
